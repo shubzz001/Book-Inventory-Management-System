@@ -1,3 +1,5 @@
+import React from 'react';
+import SearchBar from './SearchBar';
 
 const BookList = ({ books, onView, onEdit, onDelete, searchTerm, setSearchTerm, setCurrentView }) => {
     const filteredBooks = books.filter(book =>
@@ -21,6 +23,8 @@ const BookList = ({ books, onView, onEdit, onDelete, searchTerm, setSearchTerm, 
                     </div>
                 </div>
             </div>
+
+            <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
 
             <div className="stats">
                 <div className="stat-card">
