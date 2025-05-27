@@ -1,6 +1,6 @@
 export const validateBookForm = (formData) => {
     const errors = {};
-  
+  console.log("form Data",formData)
     if (!formData.title.trim()) errors.title = 'Title is required';
     if (!formData.author.trim()) errors.author = 'Author is required';
     if (!formData.publisher.trim()) errors.publisher = 'Publisher is required';
