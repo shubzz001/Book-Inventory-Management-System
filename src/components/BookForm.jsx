@@ -8,6 +8,7 @@ const BookForm = ({
     onCancel,
     isEditing
 }) => {
+    console.log("formData", formData);
     return (
         <div className="container">
             <div className="back-button">

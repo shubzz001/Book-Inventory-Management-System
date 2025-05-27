@@ -149,9 +149,11 @@ function App() {
 
   const handleView = (book) => {
     setSelectedBook(book);
+    console.log("handle View", book);
     setCurrentView('details');
   };
 
+  console.log("selectedBook", selectedBook)
   return (
     <div className="app">
       {currentView === 'list' && (
