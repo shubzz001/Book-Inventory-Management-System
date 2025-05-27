@@ -74,6 +74,7 @@ body {
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
   /* color: white; */
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  text-align: center;
 }
 
 .btn-primary:hover {
@@ -516,10 +517,17 @@ body {
     padding: 10px;
   }
   
-  .action-buttons {
-    flex-direction: column;
-  }
+  /* .action-buttons {
+    flex-direction: row;
+  } */
   
+    /* .btn-view,
+  .btn-edit,
+  .btn-delete {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    min-width: unset;
+  } */
   .book-meta {
     flex-direction: column;
     gap: 15px;
@@ -546,6 +554,12 @@ body {
   .books-table {
     min-width: 600px; 
   }
+  .btn-primary {
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  /* color: white; */
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  text-align: center;
+}
 }
 
 @media (max-width: 480px) {

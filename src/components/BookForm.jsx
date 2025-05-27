@@ -155,7 +155,7 @@ const BookForm = ({
                         {errors.description && <span className="error-message">{errors.description}</span>}
                     </div>
 
-                    <div className="form-actions">
+                    <div className="action-buttons pt-2 " style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <button
                             type="button"
                             onClick={onSubmit}
