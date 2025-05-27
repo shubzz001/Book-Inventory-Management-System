@@ -115,6 +115,7 @@ function App() {
         setBooks(prev => prev.filter(book => book.id !== bookId));
         setSelectedBook(null);
         setCurrentView('list');
+        setSearchTerm('');
         alert('Book deleted successfully!');
       } catch (error) {
         console.error('Error deleting book:', error);
@@ -174,9 +175,15 @@ function App() {
       {currentView === 'details' && (
         <BookDetails
           book={selectedBook}
-          onBack={() => setCurrentView('list')}
+          onBack={() => {
+            setSearchTerm('');
+            setCurrentView('list');
+          }}
           onEdit={handleEdit}
-          onDelete={handleDeleteBook}
+          onDelete={async (id) => {
+            setSearchTerm('');
+            await handleDeleteBook(id);
+          }}
         />
       )}
 
