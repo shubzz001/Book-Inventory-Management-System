@@ -56,7 +56,7 @@ const BookList = ({ books, onView, onEdit, onDelete, searchTerm, setSearchTerm, 
                     <tbody className="scrollable-tbody">
                         {filteredBooks.map((book) => (
                             <tr key={book.id}>
-                                <td>
+                                <td className="clickable-book-info" onClick={() => onView(book)}>
                                     <div className="book-info">
                                         <strong>{book.title}</strong>
                                         <small>{book.pages} pages</small>

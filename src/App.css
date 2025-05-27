@@ -222,8 +222,11 @@ body {
 
 .scrollable-tbody {
     display: block;
-    height: 350px; /* Adjust as needed */
+    height: 500px;
     overflow-y: auto;
+}
+.clickable-book-info {
+    cursor: pointer;
 }
 
 .books-table thead, .books-table tbody tr {
