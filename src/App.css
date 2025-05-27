@@ -20,7 +20,7 @@ body {
   padding: 20px;
 }
 
-/* Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -183,16 +183,17 @@ body {
   overflow-x: auto;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .books-table {
+  min-width: 800px; 
   width: 100%;
   border-collapse: collapse;
   background: white;
   border-radius: 15px;
   overflow: hidden;
 }
-
 .books-table thead {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -480,3 +481,87 @@ body {
   border-top: 2px solid #eee;
 }
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .header-left h1 {
+    font-size: 2rem;
+  }
+  
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .books-table {
+    font-size: 0.9rem;
+  }
+  
+  .books-table th,
+  .books-table td {
+    padding: 10px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .book-meta {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-grid {
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: 50% 50%;
+
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .book-details,
+  .form-container {
+    padding: 25px;
+  }
+    .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .books-table {
+    min-width: 600px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header-left h1 {
+    font-size: 1.8rem;
+  }
+  
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+  
+  .book-header h1 {
+    font-size: 2rem;
+  }
+  
+  .form-container h1 {
+    font-size: 1.8rem;
+  }
+}

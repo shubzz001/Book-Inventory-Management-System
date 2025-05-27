@@ -53,6 +53,7 @@ const BookList = ({ books, onView, onEdit, onDelete, searchTerm, setSearchTerm, 
                             <th>Actions</th>
                         </tr>
                     </thead>
+                    {/* <tbody > */}
                     <tbody className="scrollable-tbody">
                         {filteredBooks.map((book) => (
                             <tr key={book.id}>
